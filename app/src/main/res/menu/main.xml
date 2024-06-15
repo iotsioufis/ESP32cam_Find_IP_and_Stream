@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/icon_refresh_previews"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:iconTint="@color/white"
+        android:title="refresh previews"
+        android:visible="true"
+        app:showAsAction="always"
+        app:titleTextColor="@android:color/background_light">
+
+    </item>
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">esp32cam Find IP &amp; Stream</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Esp32 Camera\nFind IP &amp; Stream </string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_stream">Stream Display</string>
+    <string name="menu_auto_detect">Auto IP detect</string>
+    <string name="menu_manual_set">Manual IP Set</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_stream">
+
+    <fragment
+        android:id="@+id/nav_stream"
+        android:name="com.example.esp32camipfind.ui.stream.StreamFragment"
+        android:label="@string/menu_stream"
+        tools:layout="@layout/fragment_stream">
+        <action
+            android:id="@+id/action_nav_stream_to_fullscreen_fragment"
+            app:destination="@id/fullscreen_fragment" />
+        <action
+            android:id="@+id/action_nav_stream_to_nav_camera_settings_fragment"
+            app:destination="@id/nav_camera_settings_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_auto_detect"
+        android:name="com.example.esp32camipfind.ui.auto_detect.Auto_detectFragment"
+        android:label="@string/menu_auto_detect"
+        tools:layout="@layout/fragment_auto_detect">
+        <action
+            android:id="@+id/action_nav_auto_detect_to_nav_stream"
+            app:destination="@id/nav_stream" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_manual_set"
+        android:name="com.example.esp32camipfind.ui.manual_set.ManualSetFragment"
+        android:label="@string/menu_manual_set"
+        tools:layout="@layout/fragment_manual_set" />
+
+
+    <fragment
+        android:id="@+id/fullscreen_fragment"
+        android:name="com.example.esp32camipfind.ui.FullScreenFragment"
+        android:label="Fullscreen stream"
+        tools:layout="@layout/fragment_auto_detect">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_camera_settings_fragment"
+        android:name="com.example.esp32camipfind.ui.stream.CameraSettingsFragment"
+        android:label="Camera Settings"
+        tools:layout="@layout/fragment_camera_settings">
+
+        <action
+            android:id="@+id/action_nav_camera_settings_fragment_to_nav_stream"
+            app:destination="@id/nav_stream" />
+    </fragment>
+
+</navigation>
